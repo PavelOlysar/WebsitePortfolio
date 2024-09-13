@@ -1,35 +1,9 @@
 # WebsitePortfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to my personal website portfolio! 🤯✨😍
 
-## Recommended IDE Setup
+I created this portfolio to showcase my projects and broaden my skills in frontend web development. This project has been an exciting journey where I’ve delved into the world of Vue.js and SCSS. By building this portfolio, I aimed not only to present my work but also to learn Vue.js.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Explore my projects, learn something about me, and see how I’ve applied my new knowledge of Vue.js to create this portfolio.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+Thank you for visiting, and I hope you enjoy the experience!
