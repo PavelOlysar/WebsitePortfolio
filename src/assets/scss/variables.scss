@@ -1,0 +1,17 @@
+@font-face {
+  font-family: OffBit-Regular;
+  src: url('/src/assets/fonts/OffBit-Regular.ttf');
+}
+
+@font-face {
+  font-family: OffBit-DotBold;
+  src: url('/src/assets/fonts/OffBit-DotBold.ttf');
+}
+
+$main-white: #f8f8e7;
+$main-black: black;
+$main-grey: #9f9f9f;
+
+$font-text: Arial, sans-serif;
+$font-regular: 'OffBit-Regular', sans-serif;
+$font-bold: 'OffBit-DotBold', sans-serif;

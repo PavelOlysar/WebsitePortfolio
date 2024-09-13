@@ -1,13 +1,32 @@
 <template>
-  <h1>Pavel Olyšar</h1>
+  <div id="app">
+    <header>
+      <NavBar />
+      <HeroSection />
+    </header>
+  </div>
 </template>
 
-<script setup>
+<script>
+import HeroSection from './components/HeroSection.vue';
+import NavBar from './components/NavBar.vue';
 
+export default {
+  name: 'App',
+  components: {
+    NavBar,
+    HeroSection
+  }
+};
 </script>
 
-<style lang="scss" scoped>
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
+<style lang="scss">
+#app {
+  width: 100%;
+  background-color: $main-white;
+
+  header {
+    height: 100vh;
+  }
 }
 </style>

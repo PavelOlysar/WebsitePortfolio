@@ -1,0 +1,12 @@
+@import './variables.scss';
+@import './reset.scss';
+
+body {
+  color: $main-black;
+
+  font-family: $font-text;
+}
+
+h1 {
+  font-family: $font-bold;
+}
