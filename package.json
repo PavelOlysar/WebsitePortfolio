@@ -11,8 +11,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "vue": "^3.4.29",
-    "vue-router": "^4.3.3"
+    "vue": "^3.4.29"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
@@ -21,6 +20,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
     "prettier": "^3.2.5",
+    "sass-embedded": "^1.78.0",
     "vite": "^5.3.1"
   }
 }
