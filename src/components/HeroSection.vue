@@ -18,27 +18,29 @@ export default {
 <style scoped lang="scss">
 section {
     width: 100%;
-    height: 90%;
+    height: 85%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     div {
-        width: 60%;
+        width: 70%;
 
         display: flex;
         justify-content: center;
         flex-direction: column;
 
-        gap: 3rem;
+        gap: 4rem;
 
         h1 {
-            font-size: 10rem;
+            font-size: 12rem;
+
+            cursor: default;
         }
 
         p {
-            font-size: 2.25rem;
+            font-size: 3.5rem;
             font-family: $font-regular;
 
             margin-left: auto;
@@ -46,6 +48,8 @@ section {
 
         span {
             font-family: $font-bold;
+
+            cursor: crosshair;
         }
     }
 }

@@ -6,13 +6,13 @@
         <section class="links">
             <ul>
                 <li>
-                    <a href="">projects</a>
+                    <a href="">Projects</a>
                 </li>
                 <li>
-                    <a href="">about</a>
+                    <a href="">About</a>
                 </li>
                 <li class="contactLink">
-                    <a href="">contact</a>
+                    <a href="">Contact</a>
                 </li>
             </ul>
         </section>

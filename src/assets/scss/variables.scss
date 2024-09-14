@@ -8,10 +8,15 @@
   src: url('/src/assets/fonts/OffBit-DotBold.ttf');
 }
 
+$font-text: Arial, sans-serif;
+$font-regular: 'OffBit-Regular', sans-serif;
+$font-bold: 'OffBit-DotBold', sans-serif;
+
 $main-white: #f8f8e7;
 $main-black: black;
 $main-grey: #9f9f9f;
 
-$font-text: Arial, sans-serif;
-$font-regular: 'OffBit-Regular', sans-serif;
-$font-bold: 'OffBit-DotBold', sans-serif;
+$main-blue: #004e89;
+$secondary-blue: #1a659e;
+$main-orange: #ff6b35;
+$secondary-orange: #f7c59f;
