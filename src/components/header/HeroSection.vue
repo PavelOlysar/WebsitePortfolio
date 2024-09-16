@@ -8,11 +8,7 @@
     </section>
 </template>
 
-<script>
-
-export default {
-    name: "HeroSection",
-};
+<script setup>
 </script>
 
 <style scoped lang="scss">

@@ -6,30 +6,26 @@
       <ModeToggle />
     </header>
     <main>
-
+      <ProjectsSection />
     </main>
   </div>
 </template>
 
-<script>
-import HeroSection from './components/HeroSection.vue';
-import ModeToggle from './components/ModeToggle.vue';
-import NavBar from './components/NavBar.vue';
+<script setup>
+// Header
+import NavBar from './components/header/NavBar.vue';
+import HeroSection from './components/header/HeroSection.vue';
+import ModeToggle from './components/header/ModeToggle.vue';
 
-export default {
-  name: 'App',
-  components: {
-    NavBar,
-    HeroSection,
-    ModeToggle
-  }
-};
+// Main
+import ProjectsSection from './components/main/ProjectsSection.vue';
+
 </script>
 
 <style lang="scss">
 #app {
   width: 100%;
-  background-color: $main-white;
+  background-color: $background-color;
 
   header {
     height: 100vh;

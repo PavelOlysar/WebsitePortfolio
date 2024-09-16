@@ -1,20 +1,19 @@
 <template>
     <section>
-        <div class="toggle">
+        <div class="toggle" @click="toggleDarkMode">
+            <div class="description">Press 'M' or click this.</div>
             <div>Dark Mode</div>
             <div>M</div>
         </div>
         <div class="language">
+            <div class="description">Press 'L' or click this.</div>
             <div>Language</div>
             <div>L</div>
         </div>
     </section>
 </template>
 
-<script>
-export default {
-    name: "ModeToggle"
-};
+<script setup>
 </script>
 
 <style scoped lang="scss">
@@ -30,6 +29,8 @@ section {
 
     .toggle,
     .language {
+        position: relative;
+
         display: flex;
         align-items: center;
         gap: 0.5rem;
@@ -45,9 +46,32 @@ section {
                 justify-content: center;
                 align-items: center;
 
-                border: 1px solid $main-black;
+                border: 1px solid $text-color;
                 border-radius: 0.5rem;
             }
+        }
+
+        .description {
+            position: absolute;
+            bottom: 2rem;
+
+            padding: 0.5rem;
+
+            visibility: hidden;
+            opacity: 0;
+
+            color: $text-color;
+
+            border: 1px solid $text-color;
+            border-radius: 0.5rem;
+            border-bottom-right-radius: 0;
+
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        &:hover .description {
+            visibility: visible;
+            opacity: 1;
         }
     }
 }

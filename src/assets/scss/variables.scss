@@ -12,9 +12,15 @@ $font-text: Arial, sans-serif;
 $font-regular: 'OffBit-Regular', sans-serif;
 $font-bold: 'OffBit-DotBold', sans-serif;
 
-$main-white: #f8f8e7;
-$main-black: black;
-$main-grey: #9f9f9f;
+$background-color: #f8f8e7;
+$text-color: black;
+$secondary-color: #9f9f9f;
+
+[data-theme='dark'] {
+  --background-color: black;
+  --text-color: #f8f8f8;
+  --secondary-color: #9f9f9f;
+}
 
 $main-blue: #004e89;
 $secondary-blue: #1a659e;
