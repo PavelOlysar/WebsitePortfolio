@@ -1,7 +1,7 @@
 <template>
     <nav>
         <section>
-            <a href="/" class="logo">LOGO</a>
+            <a href="/" class="logo">Pavel Olyšar</a>
         </section>
         <section class="links">
             <ul>
@@ -37,9 +37,15 @@ nav {
 
 
     .logo {
-        font-family: $font-bold;
+        font-family: $font-text;
 
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     .links {
