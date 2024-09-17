@@ -82,7 +82,6 @@ nav {
                 &:hover {
                     color: $background-color;
                     background-color: $text-color;
-                    border: 1px solid $background-color;
                 }
             }
         }

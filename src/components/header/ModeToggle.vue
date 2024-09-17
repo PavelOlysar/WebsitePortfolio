@@ -37,7 +37,21 @@ section {
 
         cursor: pointer;
 
+        &:hover {
+            > :nth-child(2) {
+                opacity: 0.6;
+            }
+
+            > :last-child {
+                color: $background-color;
+                background-color: $text-color;
+
+            }
+        }
+
         div {
+            transition: all 0.3s ease-in-out;
+
             &:last-child {
                 width: 1.5rem;
                 height: 1.5rem;
@@ -66,7 +80,7 @@ section {
             border-radius: 0.5rem;
             border-bottom-right-radius: 0;
 
-            transition: opacity 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
         }
 
         &:hover .description {
