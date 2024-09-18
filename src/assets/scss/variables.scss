@@ -16,19 +16,6 @@ $secondary-blue: #1a659e;
 $main-orange: #ff6b35;
 $secondary-orange: #f7c59f;
 
-$background-color: #f8f8e7;
-$text-color: black;
+$background-color: black;
+$text-color: #f8f8e7;
 $secondary-color: #9f9f9f;
-
-@mixin themed() {
-  background-color: $background-color;
-  color: $text-color;
-}
-
-@mixin dark-mode() {
-  $background-color: black !global;
-  $text-color: #f8f8e7 !global;
-  $secondary-color: #9f9f9f !global;
-
-  @include themed();
-}

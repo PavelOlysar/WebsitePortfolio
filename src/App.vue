@@ -1,9 +1,9 @@
 <template>
-  <div id="app" :class="{ 'dark-mode': isDarkMode }">
+  <div id="app">
     <header>
       <NavBar />
       <HeroSection />
-      <ModeToggle @toggle-mode="toggleDarkMode" />
+      <ModeToggle />
     </header>
     <main>
       <ProjectsSection />
@@ -20,23 +20,14 @@ import ModeToggle from './components/header/ModeToggle.vue';
 // Main
 import ProjectsSection from './components/main/ProjectsSection.vue';
 
-// Functions
-import { useTheme } from './composables/useTheme';
-
-const { isDarkMode, toggleDarkMode } = useTheme();
 </script>
 
 <style lang="scss">
 #app {
   width: 100%;
 
-  transition: all 0.3s ease-in-out;
-
-  @include themed();
-
-  &.dark-mode {
-    @include dark-mode();
-  }
+  background-color: $background-color;
+  color: $text-color;
 
   header {
     height: 100vh;

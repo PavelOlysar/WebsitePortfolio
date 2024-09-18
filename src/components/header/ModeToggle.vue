@@ -1,11 +1,6 @@
 <template>
     <section>
-        <div class="toggle" @click="$emit('toggle-mode')">
-            <div class=" description">Press 'M' or click this.</div>
-            <div>Dark Mode</div>
-            <div>M</div>
-        </div>
-        <div class="language" @click="toggleLanguage">
+        <div class="language" @click="toggleLang">
             <div class="description">Press 'L' or click this.</div>
             <div>Language</div>
             <div>L</div>
@@ -14,7 +9,6 @@
 </template>
 
 <script setup>
-defineEmits(['toggle-mode']);
 </script>
 
 <style scoped lang="scss">
@@ -23,12 +17,11 @@ section {
     width: 100%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 
     padding: 0 2rem;
 
-    .toggle,
     .language {
         position: relative;
 
