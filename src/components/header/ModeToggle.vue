@@ -1,11 +1,11 @@
 <template>
     <section>
-        <div class="toggle" @click="toggleDarkMode">
-            <div class="description">Press 'M' or click this.</div>
+        <div class="toggle" @click="$emit('toggle-mode')">
+            <div class=" description">Press 'M' or click this.</div>
             <div>Dark Mode</div>
             <div>M</div>
         </div>
-        <div class="language">
+        <div class="language" @click="toggleLanguage">
             <div class="description">Press 'L' or click this.</div>
             <div>Language</div>
             <div>L</div>
@@ -14,6 +14,7 @@
 </template>
 
 <script setup>
+defineEmits(['toggle-mode']);
 </script>
 
 <style scoped lang="scss">

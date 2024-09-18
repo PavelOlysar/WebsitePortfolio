@@ -2,7 +2,8 @@
     <section>
         <div>
             <h1>Pavel Olyšar</h1>
-            <p>Lorem <span>ipsum dolor</span>, sit amet consectetur<br>adipisicing elit. <span>Error</span>, voluptate?
+            <p>Lorem <span>ipsum dolor</span>, sit amet consectetur<br>adipisicing elit. <span>Error</span>,
+                voluptate?
             </p>
         </div>
     </section>
