@@ -1,14 +1,30 @@
 <template>
     <section>
         <div class="language" @click="toggleLang">
-            <div class="description">Press 'L' or click this.</div>
-            <div>Language</div>
+            <div class="description">{{ t('mode.description') }}</div>
+            <div>{{ t('mode.language') }} {{ currentLanguage }}</div>
             <div>L</div>
         </div>
     </section>
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
+import { useLanguage } from '@/composables/useLang';
+import { useI18n } from 'vue-i18n';
+
+const { currentLanguage, toggleLang } = useLanguage();
+const { t } = useI18n();
+
+const handleKeyPress = (event) => {
+    if (event.key.toLowerCase() === 'l') {
+        toggleLang();
+    }
+};
+
+onMounted(() => {
+    window.addEventListener('keydown', handleKeyPress);
+});
 </script>
 
 <style scoped lang="scss">

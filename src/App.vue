@@ -20,6 +20,7 @@ import ModeToggle from './components/header/ModeToggle.vue';
 // Main
 import ProjectsSection from './components/main/ProjectsSection.vue';
 
+
 </script>
 
 <style lang="scss">

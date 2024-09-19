@@ -2,7 +2,8 @@
     <section>
         <div>
             <h1>Pavel Olyšar</h1>
-            <p>Lorem <span>ipsum dolor</span>, sit amet consectetur<br>adipisicing elit. <span>Error</span>,
+            <p>Lorem <span>{{ t('hero.highlight1') }}</span>, {{ t('hero.lang') }}<br>adipisicing elit.
+                <span>{{ t('hero.highlight2') }}</span>,
                 voluptate?
             </p>
         </div>
@@ -10,6 +11,9 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 </script>
 
 <style scoped lang="scss">
